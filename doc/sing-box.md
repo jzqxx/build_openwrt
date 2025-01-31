@@ -71,7 +71,7 @@ cp -f /etc/sing-box/xxx.json /etc/sing-box/config.json
 > 固件中提供了一个模板可以方便的使用上面的示例快速修改配置文件。使用方法参考 [更新订阅](#更新订阅) 中的示例部分。
 
 > [!CAUTION]
-> 注意：如果 IP 不是使用的 192.168.1.X 网段，须要修改 /etc/sing-box/nftables.rules 文件的 192.168.1.0/24 为你使用的网段。对应的仓库源码为 patch/openwrt-23.05/etc/sing-box/nftables.rules
+> 注意：如果 IP 不是使用的 192.168.123.X 网段，须要修改 /etc/sing-box/nftables.rules 文件的 192.168.123.0/24 为你使用的网段。对应的仓库源码为 patch/openwrt-23.05/etc/sing-box/nftables.rules
 
 ### 更新订阅
 

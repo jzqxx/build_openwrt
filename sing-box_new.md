@@ -5,7 +5,7 @@
 ### 安装命令
 
 ```bash
-sh -c "$(curl -ksS https://gh-proxy.com/raw.githubusercontent.com/ffuqiangg/build_openwrt/main/patch/sing-box/install.sh)"
+sh -c "$(curl -ksS https://gh-proxy.com/raw.githubusercontent.com/jzqxx/build_openwrt/main/patch/sing-box/install.sh)"
 ```
 
 - 注意本命令安装时会清空 /etc/sing-box 目录，有需要的请提前备份文件。
@@ -71,7 +71,7 @@ config sing-box 'mix'
 	option mixfile '/etc/sing-box/mixin.json'   # 模板文件路径
 ```
 - 这个功能通常配合订阅使用，用以对 DNS route 等进行自定义。本地配置文件完全没必要使用这个功能直接修改原文件就好。
-- 服务默认只修改必要的部分以满足作为代理网关使用的需求，需要更多自定义就可以使用这个功能。范本 [mixin.json](https://gist.github.com/ffuqiangg/d9bfcb1b37e58e6450711cd8060b57c8)，更多请参考[官方配置文档](https://sing-box.sagernet.org/zh/configuration/)。
+- 服务默认只修改必要的部分以满足作为代理网关使用的需求，需要更多自定义就可以使用这个功能。范本 [mixin.json](https://gist.github.com/jzqxx/d9bfcb1b37e58e6450711cd8060b57c8)，更多请参考[官方配置文档](https://sing-box.sagernet.org/zh/configuration/)。
 
 ### 简单配置
 

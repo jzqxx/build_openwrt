@@ -25,7 +25,7 @@ start_service() {
     config_get output "log" "output" "/var/log/sing-box.log"
     config_get external_controller_port "experimental" "external_controller_port" "9900"
     config_get external_ui "experimental" "external_ui" "ui"
-    config_get secret "experimental" "secret" "ffuqiangg"
+    config_get secret "experimental" "secret" "jzqxx"
     config_get default_mode "experimental" "default_mode" "rule"
     config_get tproxy_port "inbounds" "tproxy_port" "10105"
 

@@ -16,7 +16,7 @@ fi
 echo -e "\r\n${GREEN_COLOR}Download files ...${RES}\r\n"
 
 # prepare
-download_dir="https://raw.githubusercontent.com/ffuqiangg/build_openwrt/main/patch/sing-box/tun"
+download_dir="https://raw.githubusercontent.com/jzqxx/build_openwrt/main/patch/sing-box/tun"
 [ -d /etc/sing-box ] && rm -rf /etc/sing-box && mkdir -p /etc/sing-box
 
 # download
