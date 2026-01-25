@@ -14,8 +14,8 @@ git clone --depth 1 $sbwml_pkgs_repo sbwml_pkg &
 # 等待所有后台任务完成
 wait
 
-# 修改默认 IP 为 192.168.1.99
-sed -i "/lan) ipad=\${ipaddr:-/s/\${ipaddr:-\"[^\"]*\"}/\${ipaddr:-\"192.168.1.99\"}/" openwrt/package/base-files/*/bin/config_generate
+# 修改默认 IP 为 192.168.123.2
+sed -i "/lan) ipad=\${ipaddr:-/s/\${ipaddr:-\"[^\"]*\"}/\${ipaddr:-\"192.168.123.2\"}/" openwrt/package/base-files/*/bin/config_generate
 # 默认禁用 WIFI
 sed -i '/wireless/d' openwrt/package/lean/default-settings/files/zzz-default-settings
 sed -Ei "s/(disabled=)0/\11/" openwrt/package/kernel/mac80211/files/lib/wifi/mac80211.sh

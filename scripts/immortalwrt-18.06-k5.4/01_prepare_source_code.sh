@@ -12,7 +12,7 @@ git clone -b 18.06 --depth 1 $v2raya_repo v2raya &
 # 等待所有后台任务完成
 wait
 
-# 修改默认 IP 为 192.168.1.99
-#sed -i 's/192.168.1.1/192.168.1.99/g' openwrt/package/base-files/files/bin/config_generate
+# 修改默认 IP 为 192.168.123.2
+#sed -i 's/192.168.1.1/192.168.123.2/g' openwrt/package/base-files/files/bin/config_generate
 
 exit 0

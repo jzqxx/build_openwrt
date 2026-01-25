@@ -19,9 +19,9 @@ git clone -b openwrt-22.03 --depth 1 $autocore_arm_repo autocore &
 # 等待所有后台任务完成
 wait
 
-# 修改默认 IP 为 192.168.1.99
+# 修改默认 IP 为 192.168.123.2
 sed -i "s/\s'dhcp'//" openwrt/target/linux/amlogic/base-files/etc/board.d/02_network
-sed -i 's/192.168.100.1/192.168.1.99/g' openwrt/package/istoreos-files/Makefile
+sed -i 's/192.168.100.1/192.168.123.2/g' openwrt/package/istoreos-files/Makefile
 # 修改默认主题为 bootstrap
 sed -i '/luci-theme-argon/d' openwrt/package/istoreos-files/Makefile
 sed -i 'N;/\n.*shortcut icon/!P;D' openwrt/package/istoreos-files/Makefile
